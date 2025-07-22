@@ -5,8 +5,8 @@ body {
 }
 
 .container {
-    margin: 20px auto;
-    padding: 200px;
+    margin: 200px auto;
+    padding: 20px;
     width: 300px;
     background-color: rgb(235, 79, 107);
     border-radius: 10px;
