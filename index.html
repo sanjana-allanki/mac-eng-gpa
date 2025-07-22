@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <h1>Mac Eng 1 cGPA Calculator!</h1>
+    <title>Mac Eng 1 cGPA Calculator!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="title-box">
         <h1>GPA Calculator for First Year Mac Eng!</h1>
+    </div>
+
+    <div class="container">
         <form id="gpaForm">
             <div class="input-group">
-                    <label for="grade1">ENGINEER 1P13 (Eng Design):</label>
-                    <input type="number" id="grade1" placeholder=" " required>
+                <label for="grade1">ENGINEER 1P13 (Eng Design):</label>
+                <input type="number" id="grade1" placeholder=" " required>
             </div>
+            <div class="input-group">
                 <label for="grade2">MATH 1ZA3 (Calc 1):</label>
                 <input type="number" id="grade2" placeholder=" " required>
             </div>
@@ -47,8 +51,10 @@
             </div>
             <button type="submit">Calculate my cGPA!</button>
         </form>
+
         <h2 id="result"></h2>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
