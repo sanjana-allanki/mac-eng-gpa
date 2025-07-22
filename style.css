@@ -6,7 +6,7 @@ body {
 
 .container {
     width: 300px;
-    min-height: 100px;
+    min-height: 80px;
     padding: 20px;
     margin: 20px auto;
     background-color: rgb(235, 79, 107);
