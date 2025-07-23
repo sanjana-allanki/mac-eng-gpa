@@ -4,21 +4,20 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    /* Add smooth font rendering */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .title-box {
-    background-color: #eb4f6b; /* same but hex */
-    width: 320px;  /* match container width */
+    background-color: #eb4f6b;
+    width: 320px;
     margin: 30px auto 20px;
-    padding: 25px;
+    padding: 18px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(235, 79, 107, 0.3);
     color: white;
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 
 .container {
