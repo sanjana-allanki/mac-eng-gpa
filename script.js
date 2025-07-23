@@ -13,6 +13,8 @@ document.getElementById("gpaForm").addEventListener("submit", function(event) {
     let grade9 = parseFloat(document.getElementById("grade9").value);
 
     const grades = [grade1, grade2, grade3, grade4, grade5, grade6, grade7, grade8, grade9];
+    const weights = [13, 3, 3, 3, 3, 3, 3, 3, 3];
+
     const allBlank = grades.every(g => isNaN(g));
 
     if (allBlank) {
@@ -23,16 +25,19 @@ document.getElementById("gpaForm").addEventListener("submit", function(event) {
     let total = 0;
     let weight = 0;
 
-    if (!isNaN(grade1)) { total += grade1 * 13; weight += 13; }
-    if (!isNaN(grade2)) { total += grade2 * 3; weight += 3; }
-    if (!isNaN(grade3)) { total += grade3 * 3; weight += 3; }
-    if (!isNaN(grade4)) { total += grade4 * 3; weight += 3; }
-    if (!isNaN(grade5)) { total += grade5 * 3; weight += 3; }
-    if (!isNaN(grade6)) { total += grade6 * 3; weight += 3; }
-    if (!isNaN(grade7)) { total += grade7 * 3; weight += 3; }
-    if (!isNaN(grade8)) { total += grade8 * 3; weight += 3; }
-    if (!isNaN(grade9)) { total += grade9 * 3; weight += 3; }
+    for (let i = 0; i < grades.length; i++) {
+        if (!isNaN(grades[i])) {
+            total += grades[i] * weights[i];
+            weight += weights[i];
+        }
+    }
 
     let CGPA = total / weight;
     document.getElementById("result").textContent = "Your cGPA is: " + CGPA.toFixed(2);
+});
+
+// Dark Mode Toggle
+const toggle = document.getElementById("darkModeToggle");
+toggle.addEventListener("change", () => {
+    document.body.classList.toggle("dark", toggle.checked);
 });
