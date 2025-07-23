@@ -179,10 +179,10 @@ body.dark input:focus {
 }
 
 body.dark button {
-    background-color: #ff9aab;
+    background-color: #a3c4f3;
     color: white;
 }
 
 body.dark button:hover {
-    background-color: #ff7e93;
+    background-color: #a3c4f3;
 }
