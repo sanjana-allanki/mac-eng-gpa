@@ -57,7 +57,7 @@ body {
     border-radius: 6px;
     border: 1.8px solid #ccc;
     text-align: center;
-    background-color: #f9f5ff; /* light pastel lavender */
+    background-color: #f9f5ff;
 }
 
 .input-group input:focus {
@@ -68,7 +68,7 @@ body {
 
 button {
     padding: 12px 28px;
-    background-color: #ffb3c6; /* pastel pink */
+    background-color: #f9f5ff;
     color: #333;
     font-size: 18px;
     font-weight: 700;
@@ -79,7 +79,7 @@ button {
 }
 
 button:hover {
-    background-color: #ff94a2; /* deeper pastel */
+    background-color: #f9f5ff; /* deeper pastel */
     transform: scale(1.05);
 }
 
