@@ -186,3 +186,10 @@ body.dark button {
 body.dark button:hover {
     background-color: #a3b8ff;
 }
+
+.subtitle {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #666;
+  margin-top: 6px;
+}
