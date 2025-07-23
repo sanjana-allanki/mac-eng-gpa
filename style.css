@@ -1,21 +1,19 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #fefefe;
     text-align: center;
     margin: 0;
     padding: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 .title-box {
-    background-color: #eb4f6b;
+    background-color: #a3c4f3; /* pastel blue */
     width: 320px;
     margin: 30px auto 20px;
     padding: 18px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(235, 79, 107, 0.3);
-    color: white;
+    box-shadow: 0 4px 15px rgba(163, 196, 243, 0.4);
+    color: #333;
     font-weight: 700;
     font-size: 1.3rem;
 }
@@ -24,9 +22,9 @@ body {
     width: 320px;
     margin: 0 auto 40px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
 }
 
 .grid-container {
@@ -49,7 +47,6 @@ body {
     margin-bottom: 6px;
     font-weight: 600;
     color: #333;
-    user-select: none;
 }
 
 .input-group input {
@@ -58,21 +55,21 @@ body {
     padding: 8px;
     font-size: 14px;
     border-radius: 6px;
-    border: 1.8px solid #ddd;
+    border: 1.8px solid #ccc;
     text-align: center;
-    transition: border-color 0.3s ease;
+    background-color: #f9f5ff; /* light pastel lavender */
 }
 
 .input-group input:focus {
     outline: none;
-    border-color: #eb4f6b;
-    box-shadow: 0 0 8px rgba(235,79,107,0.4);
+    border-color: #b794f4;
+    box-shadow: 0 0 8px rgba(183, 148, 244, 0.4);
 }
 
 button {
     padding: 12px 28px;
-    background-color: #eb4f6b;
-    color: white;
+    background-color: #ffb3c6; /* pastel pink */
+    color: #333;
     font-size: 18px;
     font-weight: 700;
     border: none;
@@ -82,7 +79,7 @@ button {
 }
 
 button:hover {
-    background-color: #ba3d55;
+    background-color: #ff94a2; /* deeper pastel */
     transform: scale(1.05);
 }
 
@@ -96,7 +93,6 @@ button:active {
     font-weight: 700;
     color: #333;
     min-height: 28px;
-    transition: color 0.3s ease;
 }
 
 /* Toggle switch styling */
@@ -117,7 +113,7 @@ button:active {
 .slider {
     width: 40px;
     height: 20px;
-    background-color: #ccc;
+    background-color: #ddd;
     border-radius: 50px;
     position: relative;
     cursor: pointer;
@@ -137,7 +133,7 @@ button:active {
 }
 
 .toggle input:checked + .slider {
-    background-color: #eb4f6b;
+    background-color: #b794f4;
 }
 
 .toggle input:checked + .slider::before {
@@ -150,19 +146,19 @@ button:active {
 
 /* Dark mode */
 body.dark {
-    background-color: #121212;
+    background-color: #1a1a1a;
     color: #eee;
 }
 
 body.dark .title-box {
-    background-color: #bb445e;
+    background-color: #8c9eff;
     color: white;
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
 }
 
 body.dark .container {
-    background-color: #1e1e1e;
-    box-shadow: 0 2px 20px rgba(255,255,255,0.05);
+    background-color: #2a2a2a;
+    box-shadow: 0 2px 20px rgba(255, 255, 255, 0.05);
 }
 
 body.dark .input-group label,
@@ -172,20 +168,21 @@ body.dark #result {
 }
 
 body.dark input {
-    background-color: #333;
+    background-color: #444;
     color: white;
-    border-color: #555;
+    border-color: #666;
 }
 
 body.dark input:focus {
-    border-color: #eb4f6b;
-    box-shadow: 0 0 8px rgba(235,79,107,0.5);
+    border-color: #b794f4;
+    box-shadow: 0 0 8px rgba(183, 148, 244, 0.5);
 }
 
 body.dark button {
-    background-color: #eb4f6b;
+    background-color: #ff9aab;
+    color: white;
 }
 
 body.dark button:hover {
-    background-color: #c13f57;
+    background-color: #ff7e93;
 }
