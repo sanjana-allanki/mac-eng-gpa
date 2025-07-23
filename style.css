@@ -98,3 +98,94 @@ button:active {
     min-height: 28px;
     transition: color 0.3s ease;
 }
+
+/* Toggle switch styling */
+.toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+.toggle input {
+    display: none;
+}
+
+.slider {
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 16px;
+    width: 16px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.toggle input:checked + .slider {
+    background-color: #eb4f6b;
+}
+
+.toggle input:checked + .slider::before {
+    transform: translateX(20px);
+}
+
+.label-text {
+    font-size: 14px;
+}
+
+/* Dark mode */
+body.dark {
+    background-color: #121212;
+    color: #eee;
+}
+
+body.dark .title-box {
+    background-color: #bb445e;
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .container {
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 20px rgba(255,255,255,0.05);
+}
+
+body.dark .input-group label,
+body.dark .label-text,
+body.dark #result {
+    color: #eee;
+}
+
+body.dark input {
+    background-color: #333;
+    color: white;
+    border-color: #555;
+}
+
+body.dark input:focus {
+    border-color: #eb4f6b;
+    box-shadow: 0 0 8px rgba(235,79,107,0.5);
+}
+
+body.dark button {
+    background-color: #eb4f6b;
+}
+
+body.dark button:hover {
+    background-color: #c13f57;
+}
