@@ -151,9 +151,9 @@ body.dark {
 }
 
 body.dark .title-box {
-    background-color: #8c9eff; /* pastel blue */
+    background-color: #8c9eff;
     color: white;
-    box-shadow: 0 4px 15px rgba(140, 158, 255, 0.4);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
 }
 
 body.dark .container {
@@ -178,12 +178,11 @@ body.dark input:focus {
     box-shadow: 0 0 8px rgba(183, 148, 244, 0.5);
 }
 
-/* Make button and title box match the same pastel blue */
 body.dark button {
     background-color: #8c9eff;
     color: white;
 }
 
 body.dark button:hover {
-    background-color: #a3c4f3;
+    background-color: #a3b8ff;
 }
