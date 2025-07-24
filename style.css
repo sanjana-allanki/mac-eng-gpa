@@ -234,3 +234,19 @@ body.dark .nav-button {
 body.dark .nav-button:hover {
   background-color: #a3b8ff;
 }
+.btn-link {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #a3c4f3;
+  color: #333;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-link:hover {
+  background-color: #8c9eff;
+}
