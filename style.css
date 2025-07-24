@@ -74,6 +74,7 @@ body {
 
 button {
   padding: 12px 28px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #a3c4f3;
   color: #333;
   font-size: 18px;
